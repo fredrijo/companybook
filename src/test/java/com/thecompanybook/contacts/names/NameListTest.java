@@ -25,8 +25,6 @@ public class NameListTest {
                 new LastNameList() };
         for (NameList list : lists) {
             Assert.assertTrue(list.size() > 0);
-            System.out.println(list.getClass().getSimpleName() + " size="
-                    + list.size());
         }
     }
 

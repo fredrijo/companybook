@@ -10,6 +10,8 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
 /**
+ * Helper class to fetch docs from the web
+ * 
  * @author fredrik.jorgensen@meltwater.com
  * 
  */

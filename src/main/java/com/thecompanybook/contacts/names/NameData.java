@@ -12,8 +12,12 @@ package com.thecompanybook.contacts.names;
  */
 public class NameData {
     public enum Type {
-        MALE, FEMALE, LAST
+        MALE, FEMALE, LAST, INITIAL
     }
+
+    private static final int INITIAL_RANK = 0;
+
+    private static final double INITIAL_FREQUENCY = 0.5;
 
     private final String name;
     private final double frequency;
@@ -59,6 +63,16 @@ public class NameData {
      */
     public Type getType() {
         return type;
+    }
+
+    /**
+     * @param token
+     * @return
+     */
+    public static NameData newInitial(String token) {
+        NameData initial = new NameData(token.substring(0, 1).toUpperCase(),
+                INITIAL_FREQUENCY, INITIAL_RANK, Type.INITIAL);
+        return initial;
     }
 
 }

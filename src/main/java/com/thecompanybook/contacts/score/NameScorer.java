@@ -9,6 +9,12 @@ import com.thecompanybook.contacts.extract.ExtractedName;
 import com.thecompanybook.contacts.extract.ExtractedNameData;
 
 /**
+ * Class to score a name.
+ * 
+ * Parameters are: 1) Frequency of the individual parts of the name 2)
+ * Capitalization of the name 3) Length of the name, ideal length is by trial
+ * and error set to 2.5 tokens
+ * 
  * @author fredrik.jorgensen@meltwater.com
  * 
  */

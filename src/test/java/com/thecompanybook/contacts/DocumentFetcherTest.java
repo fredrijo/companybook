@@ -6,6 +6,8 @@ package com.thecompanybook.contacts;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import junit.framework.Assert;
+
 import org.jsoup.nodes.Document;
 import org.junit.Test;
 
@@ -28,7 +30,6 @@ public class DocumentFetcherTest {
             e.printStackTrace();
         }
         Document doc = fetcher.getDocumentStringFromURL(url);
-
-        System.out.println(doc);
+        Assert.assertTrue(doc != null);
     }
 }

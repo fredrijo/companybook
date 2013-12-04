@@ -5,6 +5,7 @@ package com.thecompanybook.contacts.score;
 
 import java.util.List;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import com.thecompanybook.contacts.extract.ExtractedName;
@@ -30,7 +31,7 @@ public class NameScorerTest {
         NameScorer nameScorer = new NameScorer();
         for (ExtractedName extractedName : extractedNames) {
             double score = nameScorer.score(extractedName);
-            System.out.println(score + " : " + extractedName.toString());
+            Assert.assertTrue(score > 0);
         }
     }
 }

@@ -6,6 +6,8 @@ package com.thecompanybook.contacts.extract;
 import com.thecompanybook.contacts.names.NameData;
 
 /**
+ * * Data container for the elements in an ExtractedName
+ * 
  * @author fredrik.jorgensen@meltwater.com
  * 
  */

@@ -13,6 +13,9 @@ import java.util.Map;
 import com.thecompanybook.contacts.names.NameData.Type;
 
 /**
+ * Abstract class for storing and processing the data from the 1990 US Census
+ * name lists.
+ * 
  * @author fredrik.jorgensen@meltwater.com
  * 
  */

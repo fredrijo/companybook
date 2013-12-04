@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Data container for an extracted name
+ * 
  * @author fredrik.jorgensen@meltwater.com
  * 
  */

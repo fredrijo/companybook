@@ -5,6 +5,8 @@ package com.thecompanybook.contacts.extract;
 
 import java.util.List;
 
+import junit.framework.Assert;
+
 import org.junit.Test;
 
 /**
@@ -28,8 +30,7 @@ public class NameExtractorTest {
         NameExtractor nameExtractor = new NameExtractor();
         String name = "John Smith";
         // Should return a ExtractedName object
-        List<ExtractedName> extractedName = nameExtractor.extractNames(name);
-        if (extractedName != null)
-            System.out.println(extractedName.toString());
+        List<ExtractedName> extractedNames = nameExtractor.extractNames(name);
+        Assert.assertNotNull(extractedNames);
     }
 }
